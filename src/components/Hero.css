@@ -1,0 +1,106 @@
+/* HeroSection.css */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 0px 90px;
+  background: #f7f9fc; /* Light background color */
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  width: 50%;
+  text-align: left;
+}
+
+.brand-name {
+  font-size: 1.8rem; /* Smaller font size for the brand name */
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #00bcd4; /* Light blue color for the brand name */
+  margin-bottom: 10px; /* Space between the brand name and the heading */
+}
+
+.hero-content h2 {
+  font-size: 1.9rem; /* Large font size */
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for heading */
+  font-weight:0;
+  color: #013A6F; /* Dark blue color for heading */
+  margin-bottom: 0px;
+}
+.hero-content h3 {
+  margin-top: 0%;
+  font-size: 1.3rem; /* Large font size */
+  font-family: 'Poppins', sans-serif; /* Using Poppins font for heading */
+  font-weight: bold;
+  color: #32a06f; /* Dark blue color for heading */
+  margin-bottom: 0px;
+}
+.hero-content p {
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif; /* Using Roboto for paragraph text */
+  color: #747373; /* Slightly grayish color for paragraph text */
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 800; /* Semi-bold for buttons */
+  border: none;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.contact-btn {
+  background-color: #46b5c4; /* Green button for 'Contact Us' */
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color: #60b587; /* Green button for 'Contact Us' */
+  color: white;
+}
+
+.learn-btn {
+  background-color: #60b587; /* Blue button for 'Learn More' */
+  color: white;
+}
+
+.learn-btn:hover {
+  background-color: #46b5c4; /* Blue button for 'Learn More' */
+  color: white;
+}
+
+.cta-btn:hover {
+  opacity: 0.9;
+}
+
+.hero-image {
+  width: 50%;
+}
+
+.hero-image img {
+  width: 70%;
+  height: auto;
+  border-radius: 20px; /* Rounded corners on the image */
+}
+
+/* Background pattern */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: url('path-to-background-pattern.png'); Use a background image like the one in the image */
+  background-size: cover;
+  opacity: 0.2; /* Set the opacity to make it subtle */
+}
